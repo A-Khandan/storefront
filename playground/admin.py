@@ -1,4 +1,4 @@
 from django.contrib import admin
 
-# Register your models here.
+# Where we reginster the database models to be used inside django admin interface
 # How the admin page is going to look like

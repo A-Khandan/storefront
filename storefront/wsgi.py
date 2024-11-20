@@ -7,6 +7,8 @@ For more information on this file, see
 https://docs.djangoproject.com/en/5.1/howto/deployment/wsgi/
 """
 
+# wsgi.py file is for the entrypoint for of our webserver, dont worry about it untill development
+
 import os
 
 from django.core.wsgi import get_wsgi_application

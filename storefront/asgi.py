@@ -7,6 +7,9 @@ For more information on this file, see
 https://docs.djangoproject.com/en/5.1/howto/deployment/asgi/
 """
 
+# asgi.py file is for the entrypoint for of our webserver, dont worry about it untill development
+
+
 import os
 
 from django.core.asgi import get_asgi_application

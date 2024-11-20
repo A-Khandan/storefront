@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
-      <div class="bg-red-500 flex">
-        jjjj
+      <div class="bg-red-500 flex max-lg:300">
+        <h2>
+          Welcome to the store
+        </h2>
       </div>
     </>
   )

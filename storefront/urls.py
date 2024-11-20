@@ -17,9 +17,11 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
-
+from playground.views import say_hello, contact
 
 urlpatterns = [
+    path("", say_hello, name = "say hello"),
     path("admin/", admin.site.urls),
-    path("playground/", include('playground.urls'))
+    path("playground/", include('playground.urls')),
+    path("contact/", contact, name = "contact"),
 ]

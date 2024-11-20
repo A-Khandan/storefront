@@ -1,9 +1,7 @@
-<html>
-    <body>
-        {% if name %}
-        <h1>Hello I'm {{ name }}!</h1>
-        {% else %}
-        <h1>Hello to you new member!</h1>
-        {% endif %}
-    </body>
-</html>
+{% extends "base.html" %}
+
+{% block contetnt %}Hello{% endblock %}
+
+{% block content %}
+    <h1>itsfrontpage</h1>
+{% endblock %}
