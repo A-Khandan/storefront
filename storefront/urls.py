@@ -22,6 +22,7 @@ from playground.views import say_hello, contact
 
 urlpatterns = [
     path("", say_hello, name = "say hello"),
+    path("items/", include("item.urls")),
     path("admin/", admin.site.urls),
     path("playground/", include('playground.urls')),
     path("contact/", contact, name = "contact"),
