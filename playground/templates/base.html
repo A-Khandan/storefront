@@ -19,7 +19,7 @@
                 <a href = "#" class = "text-lg font-medium hover:text-blue-400">New item</a>
                 <a href = "#" class = "text-lg font-medium hover:text-blue-400">Browse</a>
 
-                <a href="#" class = "px-4 py-1 text-lg text-center font-thin bg-blue-500 text-white rounded-full hover:bg-blue-700">Sign up</a>
+                <a href="{% url 'playground:signup' %}" class = "px-4 py-1 text-lg text-center font-thin bg-blue-500 text-white rounded-full hover:bg-blue-700">Sign up</a>
                 <a href="#" class = "px-4 py-1 text-lg text-center font-thin bg-gray-700 text-white rounded-full hover:bg-blue-700">Log in</a>
             </div>
         </nav>
@@ -52,7 +52,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="{% url 'contact' %}" class="text-lg text-blue-300 hover:text-blue-800">
+                        <a href="{% url 'playground:contact' %}" class="text-lg text-blue-300 hover:text-blue-800">
                             Contacts
                         </a>
                     </li>

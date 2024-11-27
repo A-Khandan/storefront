@@ -18,12 +18,11 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
-from playground.views import say_hello, contact
+
 
 urlpatterns = [
-    path("", say_hello, name = "say hello"),
+    path("", include('playground.urls')),
     path("items/", include("item.urls")),
     path("admin/", admin.site.urls),
     path("playground/", include('playground.urls')),
-    path("contact/", contact, name = "contact"),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
